@@ -10,6 +10,9 @@
       <listItem />
       <listItem />
     </div>
+    <div class="test">
+      <div class="button" />
+    </div>
   </div>
 </template>
 
@@ -26,3 +29,18 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.test {
+  display: block;
+}
+.button {
+  height: 55px;
+  width: 55px;
+  background-color: blue;
+  z-index: 15;
+  bottom: 18px;
+  right: 18px;
+  position: fixed;
+}
+</style>
