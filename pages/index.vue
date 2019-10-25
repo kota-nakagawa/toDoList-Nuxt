@@ -36,9 +36,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.content-container {
-  padding-bottom: 50px;
-}
-</style>

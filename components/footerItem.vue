@@ -1,10 +1,16 @@
 <template>
-  <div class="footer">
-    <p>hooter</p>
+  <div>
+    <div class="footer-top" />
+    <div class="footer">
+      <p>hooter</p>
+    </div>
   </div>
 </template>
 
 <style scoped>
+.footer-top {
+  padding-top: 50px;
+}
 .footer {
   position: fixed;
   z-index: 10;
