@@ -12,7 +12,7 @@ body {
   margin:0 auto;
 }
 .main-container {
-  max-width: 800px;
+  max-width: 600px;
   margin:0 auto;
   background-color: #FFFFFF;
   height: 100vh;
