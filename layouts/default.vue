@@ -1,5 +1,8 @@
 <template>
   <div class="main-container">
+    <div class="header-container">
+      <headerItem :title="title" />
+    </div>
     <nuxt />
     <div class="footer-container">
       <footerItem />
@@ -8,10 +11,17 @@
 </template>
 
 <script>
+import headerItem from '@/components/headerItem'
 import footerItem from '@/components/footerItem'
 export default {
   components: {
+    headerItem,
     footerItem
+  },
+  data () {
+    return {
+      title: 'スケジュール'
+    }
   }
 }
 </script>
@@ -27,6 +37,6 @@ body {
   max-width: 600px;
   margin:0 auto;
   background-color: #F5F7FA;
-  height: 100vh;
+  height: 100%;
 }
 </style>
