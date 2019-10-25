@@ -4,16 +4,19 @@
       <headerItem :title="title" />
     </div>
     <div class="content-container">
-      <p>Hello</p>
+      <listItem />
+      <listItem />
     </div>
   </div>
 </template>
 
 <script>
 import headerItem from '@/components/headerItem'
+import listItem from '@/components/listItem'
 export default {
   components: {
-    headerItem
+    headerItem,
+    listItem
   },
   head () {
     return {
