@@ -10,14 +10,14 @@
 
 <style scoped>
 .footer-top {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 .footer-second {
   position: fixed;
   z-index: 10;
   bottom: 0;
   height: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   width: 100%;
   max-width: 600px;
   background: linear-gradient(to bottom, rgba(245, 247, 250, 0), rgba(245, 247, 250, 1));
@@ -26,7 +26,7 @@
   position: fixed;
   z-index: 10;
   bottom: 0;
-  height: 50px;
+  height: 60px;
   width: 100%;
   max-width: 600px;
   background-color: #F5F7FA;
