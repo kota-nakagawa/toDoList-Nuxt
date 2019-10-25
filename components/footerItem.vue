@@ -9,17 +9,17 @@
 
 <style scoped>
 .footer-top {
-  padding-top: 75px;
+  padding-top: 100px;
 }
 .footer {
   position: fixed;
   z-index: 10;
   bottom: 0;
-  height: 75px;
+  height: 100px;
   width: 100%;
   max-width: 600px;
-  background: #FFFFFF;
-  border-top: solid 1px #E0E0E0;
+  background: linear-gradient(to top, transparent, #F5F7FA 0, #F5F7FA 50%, transparent);
+  /* border-top: solid 1px #E0E0E0; */
 }
 .footer p {
   font-size: 20px;
