@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="footer-top" />
+    <div class="footer-second" />
     <div class="footer">
       <p>hooter</p>
     </div>
@@ -11,14 +12,24 @@
 .footer-top {
   padding-top: 100px;
 }
+.footer-second {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  height: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 600px;
+  background: linear-gradient(to bottom, rgba(245, 247, 250, 0), rgba(245, 247, 250, 1));
+}
 .footer {
   position: fixed;
   z-index: 10;
   bottom: 0;
-  height: 100px;
+  height: 50px;
   width: 100%;
   max-width: 600px;
-  background: linear-gradient(to top, transparent, #F5F7FA 0, #F5F7FA 50%, transparent);
+  background-color: #F5F7FA;
 }
 .footer p {
   font-size: 20px;
