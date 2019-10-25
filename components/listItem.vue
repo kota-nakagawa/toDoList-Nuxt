@@ -1,6 +1,5 @@
 <template>
-  <div class="list-container">
-  </div>
+  <div class="list-container" />
 </template>
 
 <style scoped>

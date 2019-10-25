@@ -1,8 +1,20 @@
 <template>
   <div class="main-container">
     <nuxt />
+    <div class="footer-container">
+      <footerItem />
+    </div>
   </div>
 </template>
+
+<script>
+import footerItem from '@/components/footerItem'
+export default {
+  components: {
+    footerItem
+  }
+}
+</script>
 
 <style>
 html {
