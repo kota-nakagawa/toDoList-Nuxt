@@ -14,7 +14,7 @@ body {
 .main-container {
   max-width: 600px;
   margin:0 auto;
-  background-color: #FFFFFF;
+  background-color: #F5F7FA;
   height: 100vh;
 }
 </style>
