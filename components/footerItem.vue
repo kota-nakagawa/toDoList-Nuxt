@@ -11,6 +11,6 @@
   bottom: 0;
   border-top: solid 1px #E0E0E0;
   width: 100%;
-  background: #FFFFFF
+  background: #FFFFFF;
 }
 </style>

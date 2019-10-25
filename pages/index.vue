@@ -6,6 +6,12 @@
     <div class="content-container">
       <listItem />
       <listItem />
+      <listItem />
+      <listItem />
+      <listItem />
+      <listItem />
+      <listItem />
+      <listItem />
     </div>
   </div>
 </template>
@@ -30,3 +36,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.content-container {
+  padding-bottom: 50px;
+}
+</style>
