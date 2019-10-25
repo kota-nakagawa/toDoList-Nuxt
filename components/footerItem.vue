@@ -3,7 +3,9 @@
     <div class="footer-top" />
     <div class="footer-second" />
     <div class="footer">
-      <p>hooter</p>
+      <div class="footer-item" />
+      <div class="footer-item" />
+      <div class="footer-item" />
     </div>
   </div>
 </template>
@@ -30,8 +32,13 @@
   width: 100%;
   max-width: 600px;
   background-color: #F5F7FA;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.footer p {
-  font-size: 20px;
+.footer-item {
+  height: 45px;
+  width: 45px;
+  background-color: blue;
 }
 </style>
