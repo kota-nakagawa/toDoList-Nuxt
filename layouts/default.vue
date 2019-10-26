@@ -37,6 +37,6 @@ body {
   max-width: 600px;
   margin:0 auto;
   background-color: #F5F7FA;
-  height: 100%;
+  height: 100vh;
 }
 </style>

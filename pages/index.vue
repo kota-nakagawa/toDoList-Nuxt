@@ -10,17 +10,17 @@
       <listItem />
       <listItem />
     </div>
-    <div class="test">
-      <div class="button" />
-    </div>
+    <addListButton />
   </div>
 </template>
 
 <script>
 import listItem from '@/components/listItem'
+import addListButton from '@/components/addListButton'
 export default {
   components: {
-    listItem
+    listItem,
+    addListButton
   },
   head () {
     return {
@@ -29,18 +29,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.test {
-  display: block;
-}
-.button {
-  height: 55px;
-  width: 55px;
-  background-color: blue;
-  z-index: 15;
-  bottom: 18px;
-  right: 18px;
-  position: fixed;
-}
-</style>
