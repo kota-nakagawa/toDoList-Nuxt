@@ -7,6 +7,13 @@
 
 <script>
 export default {
+  transition (to, from) {
+    if (!from) { return }
+    const map = { index: 0, list: 1, settings: 2 }
+    return {
+      name: map[to.name] < map[from.name] ? 'slide-right' : 'slide-left'
+    }
+  },
   created () {
     this.$store.commit('setPageTitle', this.$metaInfo.title)
   },
