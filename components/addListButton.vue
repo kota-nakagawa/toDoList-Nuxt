@@ -1,7 +1,7 @@
 <template>
   <div class="flex-container">
     <div class="fix-position">
-      <button class="button" @click="onClickAddList">
+      <button aria-label="AddList" class="button" @click="onClickAddList">
         <span class="hamburger-item1" />
         <span class="hamburger-item2" />
       </button>
