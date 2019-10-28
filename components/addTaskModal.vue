@@ -16,7 +16,7 @@
 
           <div class="modal-form">
             <label>期日</label>
-            <vuejs-datepicker />
+            <input type="date">
           </div>
         </div>
 
@@ -30,12 +30,8 @@
 </template>
 
 <script>
-import vuejsDatepicker from 'vuejs-datepicker'
 export default {
-  name: 'Modal',
-  components: {
-    vuejsDatepicker
-  }
+  name: 'Modal'
 }
 </script>
 
@@ -71,7 +67,10 @@ export default {
   padding: 15px;
   flex-grow: 1;
 }
-.modal-form >>> input {
+.modal-form input[type="date"] {
+  appearance: unset;
+}
+input {
   border: 0;
   box-sizing: border-box;
   padding-left: 10px;
