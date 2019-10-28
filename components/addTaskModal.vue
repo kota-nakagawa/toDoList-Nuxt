@@ -68,7 +68,7 @@ export default {
   flex-grow: 1;
 }
 .modal-form input[type="date"] {
-  appearance: unset;
+  -webkit-appearance: unset;
 }
 input {
   border: 0;

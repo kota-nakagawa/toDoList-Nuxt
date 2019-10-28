@@ -1,7 +1,8 @@
 <template>
   <div class="flex-container">
     <div class="fix-position">
-      <button aria-label="AddList" class="button" @click="onClickAddList">
+      <modal v-if="showModal" @close="closeModal" />
+      <button aria-label="AddList" class="button" @click="openModal()">
         <span class="hamburger-item1" />
         <span class="hamburger-item2" />
       </button>
@@ -10,10 +11,23 @@
 </template>
 
 <script>
+import modal from '~/components/addTaskModal'
 export default {
+  components: {
+    modal
+  },
+  data () {
+    return {
+      showModal: false
+    }
+  },
   methods: {
-    onClickAddList () {
-      console.log('反応しました')
+    openModal (item) {
+      this.postItem = item
+      this.showModal = true
+    },
+    closeModal () {
+      this.showModal = false
     }
   }
 }
