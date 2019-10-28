@@ -3,9 +3,15 @@
     <div class="footer-top" />
     <div class="footer-second" />
     <div class="footer">
-      <div class="footer-item" />
-      <div class="footer-item" />
-      <div class="footer-item" />
+      <nuxt-link to="/">
+        <div class="footer-contents" />
+      </nuxt-link>
+      <nuxt-link to="/list">
+        <div class="footer-contents" />
+      </nuxt-link>
+      <nuxt-link to="/settings">
+        <div class="footer-contents" />
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -36,7 +42,7 @@
   align-items: center;
   justify-content: space-around;
 }
-.footer-item {
+.footer-contents {
   height: 45px;
   width: 45px;
   background-color: blue;

@@ -1,12 +1,12 @@
 <template>
-  <p>スケジュール</p>
+  <p>設定</p>
 </template>
 
 <script>
 export default {
   head () {
     return {
-      title: 'スケジュール'
+      title: '設定'
     }
   }
 }

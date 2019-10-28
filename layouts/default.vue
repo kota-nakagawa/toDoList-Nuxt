@@ -20,9 +20,9 @@ export default {
   },
   data () {
     return {
-      title: 'スケジュール'
+      title: 'test'
     }
-  }
+  },
 }
 </script>
 
