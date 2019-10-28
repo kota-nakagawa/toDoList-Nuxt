@@ -1,6 +1,8 @@
 <template>
   <div>
     <div class="date-container">
+      <p>期限超過</p>
+      <listItem />
       <p>今日</p>
       <listItem />
       <p>明日</p>
@@ -23,7 +25,7 @@ export default {
     addListButton
   },
   created () {
-    this.$store.commit('pageTitle', this.$metaInfo.title)
+    this.$store.commit('setPageTitle', this.$metaInfo.title)
   },
   head () {
     return {

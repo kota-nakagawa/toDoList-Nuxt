@@ -8,7 +8,7 @@
 <script>
 export default {
   created () {
-    this.$store.commit('pageTitle', this.$metaInfo.title)
+    this.$store.commit('setPageTitle', this.$metaInfo.title)
   },
   head () {
     return {
