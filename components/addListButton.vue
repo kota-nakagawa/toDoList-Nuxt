@@ -1,13 +1,23 @@
 <template>
   <div class="flex-container">
     <div class="fix-position">
-      <div class="button">
+      <button class="button" @click="onClickAddList">
         <span class="hamburger-item1" />
         <span class="hamburger-item2" />
-      </div>
+      </button>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    onClickAddList () {
+      console.log('反応しました')
+    }
+  }
+}
+</script>
 
 <style scoped>
 .flex-container {
