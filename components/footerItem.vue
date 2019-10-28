@@ -4,13 +4,19 @@
     <div class="footer-second" />
     <div class="footer">
       <nuxt-link to="/">
-        <div class="footer-contents" />
+        <div class="footer-contents">
+          <img src="~/assets/footerImg/schedule.svg" alt="スケジュール" title="スケジュールアイコン">
+        </div>
       </nuxt-link>
       <nuxt-link to="/list">
-        <div class="footer-contents" />
+        <div class="footer-contents">
+          <img src="~/assets/footerImg/list.svg" alt="リスト" title="リストアイコン">
+        </div>
       </nuxt-link>
       <nuxt-link to="/settings">
-        <div class="footer-contents" />
+        <div class="footer-contents">
+          <img src="~/assets/footerImg/settings.svg" alt="設定" title="設定アイコン">
+        </div>
       </nuxt-link>
     </div>
   </div>
@@ -43,8 +49,11 @@
   justify-content: space-around;
 }
 .footer-contents {
-  height: 45px;
-  width: 45px;
-  background-color: blue;
+  height: 40px;
+  width: 40px;
+}
+img {
+  height: 40px;
+  width: 40px;
 }
 </style>
