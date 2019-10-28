@@ -23,6 +23,7 @@ export default {
   justify-content: space-between;
 }
 .header-title p {
+  font-weight: bold;
   margin: 0;
   padding-top: 30px;
   padding-left: 25px;
