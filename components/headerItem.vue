@@ -2,7 +2,7 @@
   <div>
     <div class="header">
       <div class="header-title">
-        <p>{{ pageTitle }}</p>
+        <h1>{{ pageTitle }}</h1>
       </div>
     </div>
   </div>
@@ -22,7 +22,7 @@ export default {
   display: flex;
   justify-content: space-between;
 }
-.header-title p {
+.header-title h1 {
   font-weight: bold;
   margin: 0;
   padding-top: 30px;
