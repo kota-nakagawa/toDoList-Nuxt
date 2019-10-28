@@ -1,21 +1,26 @@
 <template>
-  <div class="date-container">
-    <p>今日</p>
-    <listItem />
-    <p>明日</p>
-    <listItem />
-    <p>いつか</p>
-    <listItem />
-    <listItem />
-    <listItem />
+  <div>
+    <div class="date-container">
+      <p>今日</p>
+      <listItem />
+      <p>明日</p>
+      <listItem />
+      <p>いつか</p>
+      <listItem />
+      <listItem />
+      <listItem />
+    </div>
+    <addListButton />
   </div>
 </template>
 
 <script>
 import listItem from '@/components/listItem'
+import addListButton from '@/components/addListButton'
 export default {
   components: {
-    listItem
+    listItem,
+    addListButton
   },
   created () {
     this.$store.commit('pageTitle', this.$metaInfo.title)
