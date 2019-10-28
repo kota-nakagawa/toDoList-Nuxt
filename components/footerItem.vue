@@ -49,11 +49,11 @@
   justify-content: space-around;
 }
 .footer-contents {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
 }
 img {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
 }
 </style>

@@ -27,6 +27,5 @@ export default {
   padding-top: 30px;
   padding-left: 25px;
   font-size: 30px;
-  font-family: 'Hiragino Maru Gothic ProN'
 }
 </style>

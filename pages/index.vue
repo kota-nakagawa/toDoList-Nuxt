@@ -1,5 +1,7 @@
 <template>
-  <p>スケジュール</p>
+  <div class="date">
+    <p>今日</p>
+  </div>
 </template>
 
 <script>
@@ -14,3 +16,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.date {
+  margin-left: 25px;
+}
+</style>
