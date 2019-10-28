@@ -2,6 +2,7 @@ export const state = () => ({
 
   // ページタイトル
   pageTitle: null
+
 })
 
 export const mutations = {
@@ -9,12 +10,3 @@ export const mutations = {
     state.pageTitle = pageTitle
   }
 }
-
-// const store = new Vuex.Store({
-//   state,
-//   // getters,
-//   mutations,
-//   plugins: [createPersistedState({
-//     paths: ['pageTitle']
-//   })]
-// })
