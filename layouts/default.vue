@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <div class="header-container">
-      <headerItem :title="title" />
+      <headerItem 2/>
     </div>
     <nuxt />
     <div class="footer-container">
@@ -17,11 +17,6 @@ export default {
   components: {
     headerItem,
     footerItem
-  },
-  data () {
-    return {
-      title: 'test'
-    }
   }
 }
 </script>

@@ -22,6 +22,9 @@ export default {
     listItem,
     addListButton
   },
+  created () {
+    this.$store.commit('pageTitle', this.$metaInfo.title)
+  },
   head () {
     return {
       title: 'リスト'

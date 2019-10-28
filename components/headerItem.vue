@@ -2,19 +2,17 @@
   <div>
     <div class="header">
       <div class="header-title">
-        <p>{{ title }}</p>
+        <p>{{ pageTitle }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-  props: {
-    title: {
-      type: String,
-      required: true
-    }
+  computed: {
+    ...mapState(['pageTitle'])
   }
 }
 </script>
