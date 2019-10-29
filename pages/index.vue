@@ -2,22 +2,22 @@
   <div>
     <div class="date-container">
       <p>期限超過</p>
-      <div class="schedule-container">
-        <h2>テスト</h2>
+      <div v-for="task in overdueDate" :key="task.id" class="schedule-container">
+        <h2>{{ task.title }}</h2>
         <p>コンテンツ</p>
       </div>
       <p>今日</p>
-      <div class="schedule-container">
+      <div v-for="task in today" :key="task.id" class="schedule-container">
         <h2>テスト</h2>
         <p>コンテンツ</p>
       </div>
       <p>明日</p>
-      <div class="schedule-container">
+      <div v-for="task in tomorrow" :key="task.id" class="schedule-container">
         <h2>テスト</h2>
         <p>コンテンツ</p>
       </div>
       <p>いつか</p>
-      <div class="schedule-container">
+      <div v-for="task in someday" :key="task.id" class="schedule-container">
         <h2>テスト</h2>
         <p>コンテンツ</p>
       </div>
@@ -27,6 +27,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import addListButton from '@/components/addListButton'
 export default {
   transition (to, from) {
@@ -38,6 +39,9 @@ export default {
   },
   components: {
     addListButton
+  },
+  computed: {
+    ...mapGetters(['overdueDate', 'today', 'tomorrow', 'someday'])
   },
   created () {
     this.$store.commit('setPageTitle', this.$metaInfo.title)
