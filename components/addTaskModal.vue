@@ -40,7 +40,10 @@ export default {
   },
   methods: {
     pushTaskForVuex () {
-      console.log('反応')
+      if (this.task.title === null || this.task.taskContents === null || this.task.date === null) {
+        return
+      }
+      this.$store.commit('addTask', this.task)
       this.$emit('close')
     }
   }
