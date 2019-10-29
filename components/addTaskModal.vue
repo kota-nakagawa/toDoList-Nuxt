@@ -34,7 +34,8 @@ export default {
       task: {
         title: null,
         taskContents: null,
-        date: null
+        date: null,
+        isCompleted: false
       }
     }
   },
