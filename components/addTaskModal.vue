@@ -70,7 +70,6 @@ export default {
   background: #F8F8F8;
   width: 85%;
   margin:25px;
-  opacity: 0.9;
   height: 75%;
   max-width: 375px;
   border-radius: 5px;
