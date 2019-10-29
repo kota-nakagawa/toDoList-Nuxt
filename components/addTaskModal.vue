@@ -8,18 +8,15 @@
             <label>タイトル</label>
             <input type="text" placeholder="タイトル">
           </div>
-
           <div class="modal-textarea">
             <label>タスク内容</label>
             <textarea />
           </div>
-
           <div class="modal-form">
             <label>期日</label>
             <input type="date">
           </div>
         </div>
-
         <span class="modal-span-close">
           <a class="contents-1" @click="$emit('close')">キャンセル</a>
           <a class="contents-2" target="_blank" rel="noopener noreferrer">追加</a>
