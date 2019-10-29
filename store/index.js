@@ -6,7 +6,7 @@ export const state = () => ({
   // ダークモード
   isDarkMode: false,
 
-  // タスクのタイトル、内容、期日の配列
+  // タスクのタイトル、内容、期日、完了済みかの配列
   tasks: []
 
 })
