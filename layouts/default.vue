@@ -17,6 +17,10 @@ export default {
   components: {
     headerItem,
     footerItem
+  },
+  created () {
+    const date = new Date()
+    this.$store.commit('setDate', date)
   }
 }
 </script>
