@@ -6,15 +6,15 @@
         <div class="modal-form-container">
           <div class="modal-form">
             <label>タイトル</label>
-            <input type="text" placeholder="タイトル">
+            <input v-model="task.title" type="text" placeholder="タイトル">
           </div>
           <div class="modal-textarea">
             <label>タスク内容</label>
-            <textarea />
+            <textarea v-model="task.taskContents" placeholder="タスクの内容を入力" />
           </div>
           <div class="modal-form">
             <label>期日</label>
-            <input type="date">
+            <input v-model="task.date" type="date">
           </div>
         </div>
         <span class="modal-span-close">
@@ -28,7 +28,16 @@
 
 <script>
 export default {
-  name: 'Modal'
+  name: 'Modal',
+  data () {
+    return {
+      task: {
+        title: null,
+        taskContents: null,
+        date: null
+      }
+    }
+  }
 }
 </script>
 
