@@ -1,7 +1,7 @@
 <template>
   <div class="list-container">
     <h2>{{ title }}</h2>
-    <p>{{ content }}</p>
+    <p>期日: {{ content }}</p>
   </div>
 </template>
 
