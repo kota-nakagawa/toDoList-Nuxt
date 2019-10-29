@@ -53,4 +53,11 @@ export default {
   border-radius: 15px;
   text-align: center;
 }
+.list-container h2 {
+  padding-top: 10px;
+  margin: 0;
+}
+.list-container p {
+  margin: 5px;
+}
 </style>
