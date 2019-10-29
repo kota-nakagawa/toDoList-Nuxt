@@ -1,9 +1,24 @@
 <template>
   <div class="list-container">
-    <h2>テスト</h2>
-    <p>内容</p>
+    <h2>{{ title }}</h2>
+    <p>{{ content }}</p>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    content: {
+      type: String,
+      required: true
+    }
+  }
+}
+</script>
 
 <style scoped>
 .list-container{

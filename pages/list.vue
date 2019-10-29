@@ -1,14 +1,7 @@
 <template>
   <div>
-    <div class="content-container">
-      <listItem />
-      <listItem />
-      <listItem />
-      <listItem />
-      <listItem />
-      <listItem />
-      <listItem />
-      <listItem />
+    <div v-for="task in reverseTasks" :key="task.taskContents" class="content-container">
+      <listItem :title="task.title" :content="task.date" />
     </div>
     <addListButton />
   </div>
@@ -24,7 +17,10 @@ export default {
     addListButton
   },
   computed: {
-    ...mapState(['tasks'])
+    ...mapState(['tasks']),
+    reverseTasks () {
+      return this.tasks.slice().reverse()
+    }
   },
   transition (to, from) {
     if (!from) { return }
