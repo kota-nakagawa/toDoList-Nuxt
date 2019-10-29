@@ -1,5 +1,8 @@
 <template>
-  <div class="list-container" />
+  <div class="list-container">
+    <h2>テスト</h2>
+    <p>内容</p>
+  </div>
 </template>
 
 <style scoped>

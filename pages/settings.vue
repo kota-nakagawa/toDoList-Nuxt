@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="settings-container" />
-    <div class="settings-container" />
   </div>
 </template>
 
