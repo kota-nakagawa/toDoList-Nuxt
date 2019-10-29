@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="task in reverseTasks" :key="task.taskContents" class="content-container">
+    <div v-for="task in reverseTasks" :key="task.id" class="content-container">
       <listItem :title="task.title" :content="task.date" />
     </div>
     <div v-if="Object.keys(tasks).length === 0" class="list-container">

@@ -27,6 +27,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'Modal',
   data () {
@@ -39,11 +40,15 @@ export default {
       }
     }
   },
+  computed: {
+    ...mapState(['tasks'])
+  },
   methods: {
     pushTaskForVuex () {
       if (!(this.task.title && this.task.taskContents && this.task.date)) {
         return
       }
+      this.task.id = Object.keys(this.tasks).length + 1
       this.$store.commit('addTask', this.task)
       this.$emit('close')
     }
