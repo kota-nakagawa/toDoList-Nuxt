@@ -3,6 +3,11 @@
     <div v-for="task in reverseTasks" :key="task.taskContents" class="content-container">
       <listItem :title="task.title" :content="task.date" />
     </div>
+    <listItem
+      v-if="Object.keys(this.tasks).length === 0"
+      :title="'まだ何もありません'"
+      :content="'右下の追加ボタンから追加して下さい'"
+    />
     <addListButton />
   </div>
 </template>
