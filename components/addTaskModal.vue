@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     pushTaskForVuex () {
-      if (this.task.title === null || this.task.taskContents === null || this.task.date === null) {
+      if (!(this.task.title && this.task.taskContents && this.task.date)) {
         return
       }
       this.$store.commit('addTask', this.task)
