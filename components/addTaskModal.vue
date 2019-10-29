@@ -19,7 +19,7 @@
         </div>
         <span class="modal-span-close">
           <a class="contents-1" @click="$emit('close')">キャンセル</a>
-          <a class="contents-2" target="_blank" rel="noopener noreferrer">追加</a>
+          <a class="contents-2" @click="pushTaskForVuex">追加</a>
         </span>
       </div>
     </div>
@@ -36,6 +36,12 @@ export default {
         taskContents: null,
         date: null
       }
+    }
+  },
+  methods: {
+    pushTaskForVuex () {
+      console.log('反応')
+      this.$emit('close')
     }
   }
 }
@@ -93,8 +99,9 @@ input {
   margin-bottom: 7.5px;
 }
 textarea {
+  padding-left: 10px;
   border: 0;
-  padding: 0;
+  box-sizing: border-box;
   background: rgb(225, 227, 228);
   border-radius: 5px;
   width: 100%;
