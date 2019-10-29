@@ -4,22 +4,22 @@
       <p>期限超過</p>
       <div v-for="task in overdueDate" :key="task.id" class="schedule-container">
         <h2>{{ task.title }}</h2>
-        <p>コンテンツ</p>
+        <p>{{ task.taskContents.substr(0,10) }}</p>
       </div>
       <p>今日</p>
       <div v-for="task in today" :key="task.id" class="schedule-container">
-        <h2>テスト</h2>
-        <p>コンテンツ</p>
+        <h2>{{ task.title }}</h2>
+        <p>{{ task.taskContents.substr(0,10) }}</p>
       </div>
       <p>明日</p>
       <div v-for="task in tomorrow" :key="task.id" class="schedule-container">
-        <h2>テスト</h2>
-        <p>コンテンツ</p>
+        <h2>{{ task.title }}</h2>
+        <p>{{ task.taskContents.substr(0,10) }}</p>
       </div>
       <p>いつか</p>
       <div v-for="task in someday" :key="task.id" class="schedule-container">
-        <h2>テスト</h2>
-        <p>コンテンツ</p>
+        <h2>{{ task.title }}</h2>
+        <p>{{ task.taskContents.substr(0,10) }}</p>
       </div>
     </div>
     <addListButton />
