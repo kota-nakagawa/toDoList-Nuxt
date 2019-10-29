@@ -46,7 +46,7 @@ export default {
 
 <style scoped>
 .list-container{
-  margin: 25px;
+  margin: 15px;
   height: 80px;
   background-color: #ffffff;
   box-shadow: 0px 4px 16px rgba(0,0,0,0.1);

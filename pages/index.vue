@@ -59,7 +59,7 @@ export default {
   margin-left: 25px;
 }
 .schedule-container{
-  margin: 25px;
+  margin: 15px;
   height: 80px;
   background-color: #ffffff;
   box-shadow: 0px 4px 16px rgba(0,0,0,0.1);
@@ -78,5 +78,8 @@ export default {
   padding-left: 20px;
   text-align: left;
   color: #777777;
+}
+.date-container p {
+  margin-bottom: 0px;
 }
 </style>
