@@ -2,7 +2,7 @@
   <div>
     <div class="settings-container">
       <div class="flex-container">
-        <h2>ユーザー設定</h2>
+        <p>ユーザー設定</p>
         <svg class="svg-object" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" /></svg>
       </div>
     </div>
@@ -38,7 +38,7 @@ export default {
   border-radius: 15px;
   text-align: center;
 }
-.settings-container h2 {
+.settings-container p {
   display: inline-block;
   margin-right: auto;
   text-align: left;
@@ -46,9 +46,9 @@ export default {
 .flex-container {
   display: flex;
 }
-.flex-container h2 {
+.flex-container p {
   padding-left: 20px;
-  padding-top: 25px;
+  padding-top: 30px;
   margin: 0;
 }
 .svg-object {
